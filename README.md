@@ -2,133 +2,117 @@
 
 Official website for **All Into Art**, a game development company and 3D digital art studio founded by **Haider Shaikh**.
 
-Engineered for seamless, zero-config hosting on **GitHub Pages**, with responsive layouts, modern AAA dark gaming aesthetics, an interactive 3D asset turntable inspector, and dynamic showcase galleries linked directly to Haider Shaikh's [ArtStation Album #3654607](https://www.artstation.com/haidershaikh6/albums/3654607).
+Engineered for seamless, zero-config hosting on **GitHub Pages**, featuring authentic 3D artwork, characters, environments, and animations directly from Haider Shaikh's [ArtStation Album #3654607](https://www.artstation.com/haidershaikh6/albums/3654607).
 
 ---
 
 ## 🚀 Live Hosting on GitHub Pages (Quick Setup)
 
-Hosting this website on GitHub takes less than 2 minutes:
+Hosting this website on GitHub Pages takes under 2 minutes:
 
-### Step 1: Initialize Git & Push to GitHub
-Open your terminal in this project folder (`f:\Antigravity Website Project`) and run:
+### Step 1: Push Local Code to Your GitHub Repository
+Open PowerShell or your terminal in this directory (`f:\Antigravity Website Project`) and run:
 
 ```bash
-# 1. Initialize git (if not already done)
-git init
-
-# 2. Add all project files
+# 1. Add changes and commit
 git add .
+git commit -m "Update website: authentic ArtStation album 3654607 assets, new cinematic design"
 
-# 3. Commit the initial release
-git commit -m "Initial release of All Into Art studio website"
-
-# 4. Create a repository on github.com (e.g. 'all-into-art-website')
-# Then link your remote and push to the 'main' branch:
+# 2. Add your GitHub remote (replace with your repo URL):
 git remote add origin https://github.com/<your-username>/<your-repo-name>.git
+
+# 3. Push to main branch
 git branch -M main
 git push -u origin main
 ```
 
-### Step 2: Enable GitHub Pages
+### Step 2: Enable GitHub Pages in Repository Settings
 1. On GitHub, navigate to your repository's **Settings** tab.
-2. In the left sidebar, click **Pages** (under the "Code and automation" section).
+2. In the left navigation menu, click **Pages** (under "Code and automation").
 3. Under **Build and deployment**:
    - **Source**: Select `Deploy from a branch`
    - **Branch**: Select `main` and folder `/ (root)`
 4. Click **Save**.
-5. Within 60 seconds, GitHub will provide your live URL:
+5. Within 60 seconds, your site will be published at:
    ```
    https://<your-username>.github.io/<your-repo-name>/
    ```
 
-*(Optional)* If you have a custom domain (e.g., `allintoart.com`), enter it in the **Custom domain** field in the GitHub Pages settings, and add a `CNAME` file containing your domain name in the root folder.
+*(Optional)* If you configure a custom domain (such as `allintoart.com`), enter it in the **Custom domain** field in the GitHub Pages settings, and add a `CNAME` file containing your domain name in the root folder.
 
 ---
 
-## ✨ Features & Architecture
+## ✨ Features & Visual Design
 
-- **Unreal Engine 5 Album #3654607 Spotlight**:
-  Direct integration with Haider Shaikh's ArtStation album (`https://www.artstation.com/haidershaikh6/albums/3654607`), highlighting Lumen lighting, Nanite geometry, and environment art breakdowns.
-- **Interactive 3D Turntable & Topology Inspector**:
-  Real-time HTML5 Canvas 3D mesh viewer allowing clients to click & drag to rotate 360°, inspect **Shaded PBR**, **Matte Clay**, **Wireframe Mesh**, and **World Normals** passes.
-- **Dynamic Portfolio Gallery**:
-  Category filtering across **Unreal Engine 5**, **Environment Art**, **Characters & Creatures**, and **Animations & Tech Art** with detailed modal lightboxes containing polycounts, texture resolutions, and software stacks.
-- **Cinematic Studio Showreel Video Player**:
-  Interactive video showcase modal for Unreal Engine trailers and environment walk-throughs.
-- **Interactive Particle Canvas Background**:
-  Ambient futuristic cyber constellation effects that react to mouse movements.
+- **100% Authentic ArtStation Album #3654607 Assets**:
+  Directly uses the real production models, characters, environments, and animations from Haider Shaikh's portfolio.
+- **Cinematic Obsidian & Warm Amber Studio Aesthetic**:
+  Designed with an understated, prestigious AAA game development aesthetic inspired by industry-leading game studios.
+- **25 Filterable Project Artworks**:
+  - **Characters & Likeness**: Green Lantern John Stewart, Avatar Aang, Billy Butcher likeness sculpts.
+  - **Environment & Architecture**: Stylized Windmills, Blacksmith Forge, Medieval Houses, Farm Structures, Tinkerer Workshop, Ancient Temple, Forest Hut.
+  - **Unreal Engine 5 Real-Time**: Sci-Fi Futuristic Lobby, Unreal Custom Shaders, Real-Time Environment Breakdowns.
+  - **Combat & Traversal Animation**: Knife Combat, Greatsword heavy swings, Stealth assassinations, Miles Morales aerial flips, Rigging & Locomotion suites.
+- **Interactive Lightbox Modal**:
+  Inspect high-resolution artwork, detailed polycounts, PBR texture formats, and jump directly to each project's page on ArtStation.
 - **Studio Capabilities & Production Pipeline**:
-  Detailed 6-pillar service overview and 4-step production sequence (Concept -> High-Poly -> PBR Shading -> UE5 Integration).
-- **Client Inquiry & Quote System**:
-  Project brief form with instant feedback, mailto integration, and quick-copy Discord handle button (`allintoarts`).
+  Clear breakdown of 3D Character Art, Modular Kitbashing, Unreal Engine Integration, Animation, and Performance Optimization.
+- **Founder Profile**:
+  Haider Shaikh profile with authentic ArtStation avatar, biography, Discord handle (`allintoarts`), and direct inquiry contact form.
 - **Zero Build Step Dependency**:
-  Pure modern HTML5, CSS3, and ES6 JavaScript. No Node.js build, bundler, or npm install required. Works instantly out of the box.
+  Pure modern HTML5, CSS3, and ES6 JavaScript. No bundlers or npm required.
 
 ---
 
-## 📁 Project Structure
+## 📁 Directory Structure
 
 ```
 Antigravity Website Project/
-├── index.html                  # Main landing page & complete interactive experience
+├── index.html                  # Main website landing page
 ├── .nojekyll                   # Bypasses Jekyll processing on GitHub Pages
-├── README.md                   # Hosting guide & documentation
+├── README.md                   # Documentation & deployment guide
 └── assets/
     ├── css/
-    │   ├── style.css           # Modern dark gaming aesthetic, layout & responsive design
-    │   └── animations.css      # Ambient glow, keyframes, cyber grids & scroll reveals
+    │   └── style.css           # Cinematic dark theme, typography & responsive layouts
     ├── js/
-    │   ├── portfolio-data.js   # Structured database of projects, specs & ArtStation links
-    │   ├── particles.js        # Interactive HTML5 canvas cyber particles
-    │   ├── turntable-viewer.js # 3D real-time mesh turntable & topology inspector
-    │   └── main.js             # Navigation, filter system, modals & form logic
+    │   ├── portfolio-data.js   # 25 authentic ArtStation album projects database
+    │   └── main.js             # Navigation, filter system, lightbox modal & form logic
     └── images/
-        ├── allintoart-logo.jpg # Studio emblem
-        ├── hero-cinematic.jpg  # Banner showcase
-        ├── project-ue5-scifi-city.jpg
-        ├── project-ue5-ancient-temple.jpg
-        ├── project-character-cyber-soldier.jpg
-        ├── project-character-fantasy-hero.jpg
-        ├── project-creature-beast.jpg
-        ├── project-environment-bunker.jpg
-        └── project-anim-action.jpg
+        ├── haider-avatar.jpg   # Haider Shaikh's ArtStation avatar
+        └── portfolio/          # 25 authentic artwork files from Album #3654607
+            ├── green-lantern-john-stewart-3d-character-model.webp
+            ├── green-lantern-john-stewart-aaron-pierre-character-model-cinematic.webp
+            ├── avatar-the-last-airbender-aang-3d-character-model.webp
+            ├── billy-butcher.webp
+            ├── sci-fi-futuristic-lobby.webp
+            ├── stylized-windmill.webp
+            ├── windmill-3d-model.webp
+            ├── blacksmith-3d-model.webp
+            ├── tinkerer-workshop.jpg
+            ├── medieval-house-3d-model-1.webp
+            ├── medieval-house-3d-model-2.webp
+            ├── medieval-house-3d-model-3.webp
+            ├── medieval-house.webp
+            ├── farm-structure-3d-model-1.webp
+            ├── farm-structure-3d-model-2.webp
+            ├── temple.jpg
+            ├── a-hut.jpg
+            ├── unreal-render.jpg
+            ├── unreal-shaders.jpg
+            ├── 3d-environment.jpg
+            ├── knife-combat-animation.webp
+            ├── knife-takedown-animation.jpg
+            ├── giant-sword-animation.jpg
+            ├── miles-morales-animation.jpg
+            └── character-animation.jpg
 ```
 
 ---
 
-## 🛠️ Modifying & Adding Projects
+## 👤 Credits
 
-To add or modify portfolio items, open `assets/js/portfolio-data.js`:
-
-```javascript
-{
-  id: "your-project-id",
-  title: "Your Project Title",
-  category: "unreal", // 'unreal' | 'environment' | 'characters' | 'animation'
-  categoryLabel: "Unreal Engine 5",
-  albumId: "3654607",
-  thumbnail: "assets/images/your-thumb.jpg",
-  fullImage: "assets/images/your-thumb.jpg",
-  shortDesc: "Brief description for card...",
-  fullDesc: "Comprehensive description for modal...",
-  software: ["Unreal Engine 5", "ZBrush", "Substance Painter"],
-  specs: {
-    triangles: "45,000 Tris",
-    textures: "4K PBR",
-    lighting: "Lumen Dynamic GI"
-  },
-  artstationUrl: "https://www.artstation.com/haidershaikh6/albums/3654607"
-}
-```
-
----
-
-## 👤 Company & Artist Credits
-
-- **Company**: All Into Art
-- **Founder / Lead 3D Artist**: Haider Shaikh
+- **Studio**: All Into Art
+- **Founder & Lead 3D Artist**: Haider Shaikh
 - **ArtStation Portfolio**: [haidershaikh6.artstation.com](https://haidershaikh6.artstation.com/)
-- **Featured ArtStation Album**: [Album 3654607](https://www.artstation.com/haidershaikh6/albums/3654607)
+- **Featured ArtStation Album**: [Album #3654607](https://www.artstation.com/haidershaikh6/albums/3654607)
 - **Discord**: `allintoarts`
-- **Location**: Karachi, Pakistan / Global Remote Collaboration
